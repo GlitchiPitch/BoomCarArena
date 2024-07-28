@@ -34,7 +34,6 @@ function sitPlayerToCar(car: types.Car, humanoid: Humanoid)
 end
 
 function setupBomb(bomber: types.Car)
-    local bomb = data.currentBomb.Value
     if not data.currentBomb.Value then return end
     data.currentBomb.Value.Parent = bomber.Hitbox
     data.currentBomb.Value.CFrame = bomber.Hitbox.BombAttachment.WorldCFrame

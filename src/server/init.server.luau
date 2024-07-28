@@ -64,6 +64,7 @@ function finish()
         if not car.IsAlive.Value then continue end
         local humanoid = car.DriveSeat.Occupant
         if not humanoid then continue end
+        humanoid.JumpPower = 50
         local player = game.Players:GetPlayerFromCharacter(humanoid.Parent)
         player:LoadCharacter()
         addPoint(player)
